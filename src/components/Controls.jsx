@@ -1,7 +1,9 @@
-const Controls = () => {
+const Controls = ({ toggle }) => {
   return (
     <div id="controls">
-      <button type="button">Record</button>
+      <button type="button" onClick={toggle}>
+        Record
+      </button>
       <button type="button">Play</button>
     </div>
   );
