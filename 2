@@ -1,3 +1,9 @@
+:root {
+  --bg-dark: #282828;
+  --bg-light: #504945;
+  --text: #98971a;
+}
+
 html,
 body {
   height: 100%;
@@ -16,4 +22,22 @@ body {
   box-sizing: border-box;
 }
 
-@import "app.css";
+#app {
+  height: 100%;
+  background-color: var(--bg-dark);
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 3rem;
+  background-color: var(--bg-light);
+}
+
+#controls {
+}
+
+#vis-box {
+}

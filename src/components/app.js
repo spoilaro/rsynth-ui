@@ -1,21 +1,17 @@
-import { h } from 'preact';
-import { Router } from 'preact-router';
+import { h } from "preact";
 
-import Header from './header';
-
-// Code-splitting is automated for `routes` directory
-import Home from '../routes/home';
-import Profile from '../routes/profile';
+import Navbar from "./Navbar";
+import Controls from "./Controls";
+import VisBox from "./VisBox";
 
 const App = () => (
-	<div id="app">
-		<Header />
-		<Router>
-			<Home path="/" />
-			<Profile path="/profile/" user="me" />
-			<Profile path="/profile/:user" />
-		</Router>
-	</div>
-)
+  <div id="app">
+    <Navbar />
+    <div id="main">
+      <VisBox />
+      <Controls />
+    </div>
+  </div>
+);
 
 export default App;
